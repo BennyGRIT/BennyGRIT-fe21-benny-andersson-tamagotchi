@@ -1,0 +1,15 @@
+.flex-container{
+    display: flex;
+    border: solid 3px green;
+    justify-content: center;
+}
+
+.flex1{
+    border: solid 3px red;
+    width: 30rem;
+}
+
+.flex2{
+    border: solid 3px blue;
+    width: 30rem;
+}

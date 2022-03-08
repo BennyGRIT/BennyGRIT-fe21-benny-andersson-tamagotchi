@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,48 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <p><h2>Benny är en jävla Ninja Tamagotshi!!</h2></p>
-    <p>eller?</p>
-    <img src="/img/tamabenny.png" alt="tamagotshin">
-    
+
+    <main class="flex-container">
+        <div class="flex1">
+            <p>
+            <h2>Benny är en jävla Ninja tamagotchiooo!!</h2>
+            </p>
+            <img src="/img/tamagotshin.png" alt="tamagotshin">
+
+            <form>
+                <fieldset>
+                    <legend>Din tamagotchi</legend>
+                    <label for="tamaName">Skriv ditt namn</label>
+                    <input type="text" id="tamaName">
+                    <br>
+                    <label for="tamaAnimal">Vilken typ av djur vill du vara?</label>
+                    <input type="text" id="tamaAnimal">
+                    <br>
+                    <button type="submit">Skapa Tamagotchi</button>
+                </fieldset>
+            </form>
+
+        </div>
+
+        <div class="flex2">
+            <p>Detta är du , coolt väl?
+            </p>
+        </div>
+    </main>
+
+
 </body>
+
 </html>
+
+
+
+<!-- Tamagotchin ska skapas utifrån en klass
+När en tamagotchi skapas i koden ska den ges ett namn och en djurtyp. 
+Den ska ha poäng för hunger och happiness, minsta värde ska vara 0 och högsta 10. De startar båda på 5.
+Hunger-värdet ska långsamt ökas (använd setInterval när tamagotchin skapas för att med jämna mellanrum öka värdet), när det når 10 dör tamagotchin.
+Happiness-värdet ska långsamt sjunka, när det når 0 dör tamagotchin.
+Man ska kunna mata tamagotchin för att minska hunger-värdet. 
+Man ska kunna leka med tamagotchin för att öka happiness-värdet -->

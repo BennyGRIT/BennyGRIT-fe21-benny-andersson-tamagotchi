@@ -1,12 +1,11 @@
 {
   "name": "miniprojekt-tamagotshi",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "dev":"parcel ./src/index.html",
-    "clean":"del-cli ./dist ./.parcel-cache",
-    "build":"parcel build .src/index.html --public-url ./",
+    "dev": "parcel ./src/index.html",
+    "clean": "del-cli ./dist ./.parcel-cache",
+    "build": "parcel build .src/index.html --public-url ./",
     "browserslist": "[Firefox>95]"
   },
   "author": "",
@@ -14,5 +13,15 @@
   "dependencies": {
     "del-cli": "^4.0.1",
     "parcel": "^2.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BennyGRIT/BennyGRIT-fe21-benny-andersson-tamagotchi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BennyGRIT/BennyGRIT-fe21-benny-andersson-tamagotchi/issues"
+  },
+  "homepage": "https://github.com/BennyGRIT/BennyGRIT-fe21-benny-andersson-tamagotchi#readme",
+  "description": ""
 }

@@ -1,3 +1,6 @@
+body{
+    background-color: linen;
+}
 .flex-container{
     display: flex;
     border: solid 3px green;
@@ -10,6 +13,38 @@
 }
 
 .flex2{
+    padding-top: 5rem;
     border: solid 3px blue;
     width: 30rem;
+}
+
+
+    #hitAnimal{
+        margin-bottom: 3rem;
+    }
+    #happiness{
+        margin-bottom: 2rem;
+    }
+
+#lekaleka{
+    font-size: larger;
+    font-weight: bolder;
+    background-color: hotpink;
+    color: white;
+    border-radius: 10px;
+}
+#lekaleka:hover{
+    background-color: rgb(209, 15, 112);
+    color: grey;
+}
+#lekaleka:active{
+    background-color: black;
+    color: white;
+}
+#matamata{
+    font-size: larger;
+    font-weight: bolder;
+    background-color: hotpink;
+    color: white;
+    border-radius: 10px;
 }

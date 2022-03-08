@@ -1,5 +1,5 @@
 let yourName = document.querySelector(".tamaName");
-console.log(yourName);
+console.log(yourName + "Benny");
 class Newtamagotchi {
     constructor(tamagotchiName, tamagotchiAnimal){
         this.tamagotchiName = tamagotchiName;

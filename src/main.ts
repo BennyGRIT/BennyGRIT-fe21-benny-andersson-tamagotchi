@@ -1,5 +1,5 @@
 let yourName = document.querySelector(".tamaName")
-console.log(yourName)
+console.log(yourName + "Benny")
 
 
 

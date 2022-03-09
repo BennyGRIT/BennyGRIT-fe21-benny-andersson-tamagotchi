@@ -15,20 +15,30 @@
     <main class="flex-container">
         <div class="flex1">
             <p>
-            <h2>Bennyyyy är en jävla Ninja tamagotchi!!</h2>
+            <h2>Jag är en Ninja tamagotchiio!!</h2>
             </p>
-            <img id="bennyBild" src="/img/tamabenny.png" alt="tamagotshiiiin">
-
-            <form>
+            <div id="bennyBild">
+                <!-- <img src="/img/giphy.gif" alt="" id="shitty"> -->
+                <!-- <img id="bennyBilden" src="/img/tamagotshin.png" alt="tamagotshiiiin"> -->
+            </div>
+            <form id="formen">
                 <fieldset>
-                    <legend>Din tamagotchi</legend>
+                    <legend>Din tamagotchiiii</legend>
                     <label for="dittNamn">Skriv ditt namn</label>
-                    <input type="text" name="dittNamn" id="tamaName">
-                    
+                    <input type="text" name="dittNamn" id="tamaName" required>
                     <br>
                     <label for="tamaAnimal">Vilken typ av djur vill du vara?</label>
-                    <input type="text" id="tamaAnimal">
+                    <input type="text" id="tamaAnimal" required>
                     <br>
+                    <label for="dinPicture">Välj din avatar</label>
+                    <select name="selectName" id="dinPicture" required>
+                        <option value="1">Normal typ</option>
+                        <option value="2">Ful typ</option>
+
+                    </select>
+                    <br>
+
+
                     <button type="submit" id="mySubmit">Skapa Tamagotchi</button>
                 </fieldset>
             </form>
@@ -37,17 +47,16 @@
 
         <div class="flex2">
             <div>Detta är du , coolt väl?
-                <div id="hitNamn">Namn</div>
-                <div id="hitAnimal">Animal</div>
-                <!-- <div id="hitPic">Bild</div> -->
-                <div id="hunger">Hunger poäng: 5</div>
-                <div id="happiness">Happiness poäng: 5</div>
+                <div id="hitNamn">Namn: </div>
+                <div id="hitAnimal">Djuur: </div>
+                <div id="hunger">Hunger poäng: </div>
+                <div id="happiness">Happiness poäng: </div>
 
                 <span>Mata din tamagotchi: </span>
-                <button id="lekaleka">Leka leka</button>
+                <button id="matamata">Mata Mata</button>
                 <br>
                 <span>Lek med den jäveln: </span>
-                <button id="matamata">Mata Mata</button>
+                <button id="lekaleka">Leka Leka</button>
 
                 <div></div>
             </div>

@@ -1,5 +1,5 @@
 body{
-    background-color: linen;
+    background-color: linen ;
 }
 .flex-container{
     display: flex;
@@ -10,13 +10,18 @@ body{
 .flex1{
     border: solid 3px red;
     width: 30rem;
+    text-align: center;
 }
 
 .flex2{
     padding-top: 5rem;
     border: solid 3px blue;
     width: 30rem;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;    
 }
+    
 
 
     #hitAnimal{
@@ -47,5 +52,31 @@ body{
     background-color: hotpink;
     color: white;
     border-radius: 10px;
+}
+#matamata:hover{
+    background-color: rgb(209, 15, 112);
+    color: grey;
+}
+#matamata:active{
+    background-color: black;
+    color: white;
+}
+
+#bennyBild{
+    font: larger;
+    border: 8px solid green;
+    min-height: 28rem;
+    max-height: 28rem;
+    text-align: center;
+}
+
+#formen{
+    text-align: center;
+}
+
+#shitty{
+    max-height: 28rem;
+    max-width: 28rem;
+    padding-top: 3rem;
 }
 /*# sourceMappingURL=index.2cdaf7bc.css.map */

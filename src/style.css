@@ -48,6 +48,7 @@ body{
     background-color: hotpink;
     color: white;
     border-radius: 10px;
+    border: solid black 3px;
 }
 #matamata:hover{
     background-color: rgb(209, 15, 112);

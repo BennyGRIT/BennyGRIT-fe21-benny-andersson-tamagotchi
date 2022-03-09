@@ -55,17 +55,19 @@ myBtn.addEventListener("click", function(e) {
     console.log(myNewTamagotchi);
     document.getElementById("hitNamn").innerHTML = "Namn: " + myNewTamagotchi.tamagotchiName;
     document.getElementById("hitAnimal").innerHTML = "Djuur: " + myNewTamagotchi.tamagotchiAnimal;
-    document.getElementById("hunger").innerHTML = "Hunger poäng: " + myNewTamagotchi.tamagotchiHunger[5];
-    document.getElementById("happiness").innerHTML = " Happiness poäng: " + myNewTamagotchi.tamagotchiHappiness[5];
+    document.getElementById("hunger").innerHTML = "Hunger: " + myNewTamagotchi.tamagotchiHunger[5];
+    document.getElementById("happiness").innerHTML = " Happiness: " + myNewTamagotchi.tamagotchiHappiness[5];
     let matamataBtn = document.getElementById("matamata");
-    // let lekalekaBtn:any = (document.getElementById("lekaleka"))
+    let lekalekaBtn = document.getElementById("lekaleka");
     matamataBtn.addEventListener("click", function(nr1, nr2) {
-        return nr1 - nr2;
-    //     document.getElementById("happiness").innerHTML =  " Happiness poäng: 10"
-    //     document.getElementById("hunger").innerHTML ="Hunger poäng: " +myNewTamagotchi.tamagotchiHunger.values
+        // document.getElementById("happiness").innerHTML = " Happiness poäng: 10"
+        document.getElementById("hunger").innerHTML = "Hunger: " + myNewTamagotchi.tamagotchiHunger[0];
     // for(let i=5; i<10; i--){
     //     document.getElementById("hunger").innerHTML = "Hunger poäng: " +myNewTamagotchi.tamagotchiHunger[i]       
     //      }
+    });
+    lekalekaBtn.addEventListener("click", function(nr1, nr2) {
+        document.getElementById("happiness").innerHTML = "Happiness: " + myNewTamagotchi.tamagotchiHappiness[10];
     });
 // for (let indexet=5; indexet<10; indexet++){
 //     // myNewTamagotchi.tamagotchiHunger[indexet] 

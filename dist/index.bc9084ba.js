@@ -59,9 +59,13 @@ myBtn.addEventListener("click", function(e) {
     document.getElementById("happiness").innerHTML = " Happiness poäng: " + myNewTamagotchi.tamagotchiHappiness[5];
     let matamataBtn = document.getElementById("matamata");
     // let lekalekaBtn:any = (document.getElementById("lekaleka"))
-    matamataBtn.addEventListener("click", function(e) {
-        document.getElementById("happiness").innerHTML = " Happiness poäng: 10";
-        for(let i = 5; i < 10; i--)document.getElementById("hunger").innerHTML = "Hunger poäng: " + myNewTamagotchi.tamagotchiHunger[i];
+    matamataBtn.addEventListener("click", function(nr1, nr2) {
+        return nr1 - nr2;
+    //     document.getElementById("happiness").innerHTML =  " Happiness poäng: 10"
+    //     document.getElementById("hunger").innerHTML ="Hunger poäng: " +myNewTamagotchi.tamagotchiHunger.values
+    // for(let i=5; i<10; i--){
+    //     document.getElementById("hunger").innerHTML = "Hunger poäng: " +myNewTamagotchi.tamagotchiHunger[i]       
+    //      }
     });
 // for (let indexet=5; indexet<10; indexet++){
 //     // myNewTamagotchi.tamagotchiHunger[indexet] 

@@ -55,13 +55,16 @@ myBtn.addEventListener("click", function(e:any){
     let matamataBtn:any = (document.getElementById("matamata"))
 // let lekalekaBtn:any = (document.getElementById("lekaleka"))
 
-matamataBtn.addEventListener("click", function(e:any){
-        document.getElementById("happiness").innerHTML =  " Happiness poäng: 10"
+matamataBtn.addEventListener("click", function (nr1:any, nr2:any){
+    return nr1-nr2
 
-    for(let i=5; i<10; i--){
-        document.getElementById("hunger").innerHTML = "Hunger poäng: " +myNewTamagotchi.tamagotchiHunger[i]       
-         }
+    //     document.getElementById("happiness").innerHTML =  " Happiness poäng: 10"
+    //     document.getElementById("hunger").innerHTML ="Hunger poäng: " +myNewTamagotchi.tamagotchiHunger.values
+    // for(let i=5; i<10; i--){
+    //     document.getElementById("hunger").innerHTML = "Hunger poäng: " +myNewTamagotchi.tamagotchiHunger[i]       
+    //      }
 })
+
     // for (let indexet=5; indexet<10; indexet++){
     //     // myNewTamagotchi.tamagotchiHunger[indexet] 
     //     setInterval(myNewTamagotchi.tamagotchiHunger[indexet].logText.bind(myNewTamagotchi.tamagotchiHunger[indexet]), 3000)

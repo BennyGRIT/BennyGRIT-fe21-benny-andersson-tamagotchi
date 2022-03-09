@@ -3,19 +3,16 @@ body{
 }
 .flex-container{
     display: flex;
-    border: solid 3px green;
     justify-content: center;
 }
 
 .flex1{
-    border: solid 3px red;
     width: 30rem;
     text-align: center;
 }
 
 .flex2{
     padding-top: 5rem;
-    border: solid 3px blue;
     width: 30rem;
     text-align: center;
     font-size: large;
@@ -34,7 +31,6 @@ body{
 #lekaleka{
     font-size: larger;
     font-weight: bolder;
-    background-color: hotpink;
     color: white;
     border-radius: 10px;
 }
@@ -64,7 +60,6 @@ body{
 
 #bennyBild{
     font: larger;
-    border: 8px solid green;
     min-height: 28rem;
     max-height: 28rem;
     text-align: center;

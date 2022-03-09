@@ -9,14 +9,23 @@ body{
 .flex1{
     width: 30rem;
     text-align: center;
+    background-color: lightgray;
+    border: solid 3px grey;
+    border-radius: 15px;
+
 }
 
 .flex2{
     padding-top: 5rem;
     width: 30rem;
+    background-color: lightgray;
+
     text-align: center;
     font-size: large;
-    font-weight: bold;    
+    font-weight: bold;   
+    border: solid 3px grey;
+    border-radius: 15px;
+ 
 }
     
 
@@ -64,6 +73,13 @@ body{
     min-height: 28rem;
     max-height: 28rem;
     text-align: center;
+    border-bottom: solid 3px grey;
+    border-top: solid 3px grey;
+    border-radius: 15px;
+}
+
+fieldset{
+border: none;
 }
 
 #formen{

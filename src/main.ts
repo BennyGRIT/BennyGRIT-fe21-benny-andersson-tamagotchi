@@ -1,7 +1,8 @@
 let yourName: any = (<HTMLInputElement>document.getElementById("tamaName"))
-let yourAnimal: any = (<HTMLInputElement>document.getElementById("tamaAnimal"))
 
 console.log("Benny")
+
+
 
 let myBtn: any = (document.getElementById("mySubmit"))
 
@@ -13,6 +14,8 @@ imgPlace.appendChild(img)
 
 myBtn.addEventListener("click", function (e: any) {
     e.preventDefault();
+    const letsHunger:any = document.getElementById("hunger")
+    letsHunger.reload
 
     let myNicePicture = document.getElementById('dinPicture') as HTMLSelectElement;
     let pictureChoice = myNicePicture.options[myNicePicture.selectedIndex].value;
@@ -29,63 +32,83 @@ myBtn.addEventListener("click", function (e: any) {
     }
 
     class Newtamagotchi {
-        constructor(
-            public tamagotchiName: string,
-            public tamagotchiAnimal: string,
-            public tamagotchiHunger: any[],
-            public tamagotchiHappiness: any[]
-        ) {
+            public tamagotchiName: string = yourName;
+            public tamagotchiAvatar: string = pictureChoice;
+            public tamagotchiHunger:number = 5;
+            public tamagotchiHappiness:number =5;
+            private lesHunger;
+            private lesHappy;
+        
+            constructor(tamagotchiName, tamagotchiAvatar) {
+                this.tamagotchiName = tamagotchiName;
+                this.tamagotchiAvatar = tamagotchiAvatar;
+
+                this.lesHunger = setInterval(this.hungryHunger.bind(this), 4000);
+                this.lesHappy = setInterval(this.sadHappiness.bind(this), 4000)
         }
+
+        hungryHunger():number{
+            if(this.tamagotchiHunger >=10){
+                alert ("Du dog av svält. Testa gärna igen, men kom igen och mata den lille tamagotchin :)")
+                location.reload()
+            }
+            if (this.tamagotchiHunger <=0){
+                
+            }
+                document.getElementById("hunger").innerHTML = "Hunger: " + myNewTamagotchi.tamagotchiHunger
+            return this.tamagotchiHunger++
+        }
+        feedTheHunger():number{
+            if(this.tamagotchiHappiness <=0){
+                alert ("Din tamagotchi dog at tristess, lek lite med honom nästa gång vettja!! :)")
+                location.reload()
+            }
+            return this.tamagotchiHunger--
+        }
+
+        sadHappiness():number{
+            document.getElementById("happiness").innerHTML = " Happiness: " + myNewTamagotchi.tamagotchiHappiness
+
+            return this.tamagotchiHappiness--
+        }
+        playTheHappiness():number{
+            return this.tamagotchiHappiness++
+        }
+        yourNameIs():string{
+            return document.getElementById("hitNamn").innerHTML = "Namn: " + myNewTamagotchi.tamagotchiName        
+        }
+        
     }
-    // let myTry = setInterval(this.logText.bind(this), 3000);
+
+//Här skapar vi den nya tamagotchin, 
+    const myNewTamagotchi = new Newtamagotchi(yourName.value, pictureChoice);
+    // myNewTamagotchi.tamagotchiName
 
 
-    const myNewTamagotchi = new Newtamagotchi(yourName.value, yourAnimal.value, [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-    myNewTamagotchi.tamagotchiName
+
+
     console.log(myNewTamagotchi)
-
-    document.getElementById("hitNamn").innerHTML = "Namn: " + myNewTamagotchi.tamagotchiName
-    document.getElementById("hitAnimal").innerHTML = "Djuur: " + myNewTamagotchi.tamagotchiAnimal
-    document.getElementById("hunger").innerHTML = "Hunger: " + myNewTamagotchi.tamagotchiHunger[5]
-    document.getElementById("happiness").innerHTML = " Happiness: " + myNewTamagotchi.tamagotchiHappiness[5]
-
-
 
 
     let matamataBtn: any = (document.getElementById("matamata"))
     let lekalekaBtn: any = (document.getElementById("lekaleka"))
+    let restartaBtn:any = (document.getElementById("restarta"))
 
+    restartaBtn.addEventListener("click", function(){
+        location.reload()
+    })
+    
     matamataBtn.addEventListener("click", function (nr1: any, nr2: any) {
-        // document.getElementById("happiness").innerHTML = " Happiness poäng: 10"
-        document.getElementById("hunger").innerHTML = "Hunger: " + myNewTamagotchi.tamagotchiHunger[0]
-        // for(let i=5; i<10; i--){
-        //     document.getElementById("hunger").innerHTML = "Hunger poäng: " +myNewTamagotchi.tamagotchiHunger[i]       
-        //      }
+        myNewTamagotchi.feedTheHunger()
+        // document.getElementById("hunger").innerHTML = "Hunger: " + myNewTamagotchi.tamagotchiHunger[0]
     })
 
     lekalekaBtn.addEventListener("click", function (nr1: any, nr2: any) {
-        document.getElementById("happiness").innerHTML = "Happiness: " + myNewTamagotchi.tamagotchiHappiness[10]
+        myNewTamagotchi.playTheHappiness()
+        // myNewTamagotchi.sadHappiness()
+        // document.getElementById("happiness").innerHTML = "Happiness: " + myNewTamagotchi.tamagotchiHappiness[10]
     })
-    // for (let indexet=5; indexet<10; indexet++){
-    //     // myNewTamagotchi.tamagotchiHunger[indexet] 
-    //     setInterval(myNewTamagotchi.tamagotchiHunger[indexet].logText.bind(myNewTamagotchi.tamagotchiHunger[indexet]), 3000)
-
-    // }
-
     
 })
 
 
-
-
-// function tryCount(){
-//     for
-// }
-
-// <button onclick="setTimeout(myFunction, 3000)">Try it</button>
-
-// <script>
-// function myFunction() {
-//   alert('Hello');
-// }
-// </script> 

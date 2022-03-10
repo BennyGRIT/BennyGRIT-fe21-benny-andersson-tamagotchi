@@ -27,9 +27,6 @@
                     <label for="dittNamn">Skriv ditt namn</label>
                     <input type="text" name="dittNamn" id="tamaName" required>
                     <br>
-                    <label for="tamaAnimal">Vilken typ av djur vill du vara?</label>
-                    <input type="text" id="tamaAnimal" required>
-                    <br>
                     <label for="dinPicture">Välj din avatar</label>
                     <select name="selectName" id="dinPicture" required>
                         <option value="1">Normal typ</option>
@@ -46,19 +43,22 @@
         </div>
 
         <div class="flex2">
-            <div>Detta är du , coolt väl?
-                <div id="hitNamn">Namn: </div>
-                <div id="hitAnimal">Djur: </div>
-                <div id="hunger">Hunger: </div>
-                <div id="happiness">Happiness: </div>
+            <div>
+                <div id="hitNamn">Namnnnn: </div>
+                <div id="hunger">Hunger: 5</div>
+                <div id="happiness">Happiness: 5</div>
 
                 <span>Mata din tamagotchi: </span>
                 <button id="matamata">Mata Mata</button>
                 <br>
                 <span>Lek med den jäveln: </span>
                 <button id="lekaleka">Leka Leka</button>
+                <br>
+                <button id="restarta">Nollställ spelet</button>
 
-                <div></div>
+                <div id="takeTheShit"> hallåååå
+                    <img src="/img/giphy.gif" alt="gif">
+                </div>
             </div>
         </div>
     </main>
@@ -77,3 +77,18 @@ Hunger-värdet ska långsamt ökas (använd setInterval när tamagotchin skapas 
 Happiness-värdet ska långsamt sjunka, när det når 0 dör tamagotchin.
 Man ska kunna mata tamagotchin för att minska hunger-värdet. 
 Man ska kunna leka med tamagotchin för att öka happiness-värdet -->
+
+
+
+<!-- 
+increaseHunger():number
+{
+    console.log("Hunger: " + this.hunger);
+    if(this.hunger >=10)
+    {
+        this.isAlive = false;
+        window.location.reload();
+        console.log("Called from hunger: " + this.isAlive);
+    }
+    return this.hunger++;
+} -->

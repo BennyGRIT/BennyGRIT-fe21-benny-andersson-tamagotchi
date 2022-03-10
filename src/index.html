@@ -25,15 +25,15 @@
             <form id="formen">
                 <fieldset>
                     <p>Din tamagotchi</p>
-                    <label for="dittNamn">Skriv ditt namn här</label>
-                    <input type="text" name="dittNamn" id="tamaName" required>
-                    <br>
                     <label for="dinPicture">Välj din avatar</label>
                     <select name="selectName" id="dinPicture" required>
                         <option value="1">Normal typ</option>
                         <option value="2">Ful typ</option>
 
                     </select>
+                    <br>
+                    <label for="dittNamn">Skriv ditt namn här</label>
+                    <input type="text" name="dittNamn" id="tamaName" required>
                     <br>
 
 
@@ -45,6 +45,21 @@
 
         <div class="flex2">
             <div>
+
+                <ol id="info">Information:
+                    <li>Tamagotchin är hungrig.. Hungern börjar på 5. Där 10 är högst.
+                        <br>
+                    Om Hungern blir 10 så dör Tamagotchin.
+                    <br>
+                    Om Hungern blir 0 så är Tamagotchin jättemätt och full i magen</li>
+                    <br>
+                    <li>Tamagotchin vill ha roligt!
+                        <br>
+                    Om Happiness blir 0, så dör Tamagotchin
+                    <br>
+                    Om Happiness blir 10. Så är den 10. Easy?</li>
+                </ol>
+
                 <div id="hitNamn">Namn: </div>
                 <div id="hunger">Hunger: 5</div>
                 <div id="happiness">Happiness: 5</div>
